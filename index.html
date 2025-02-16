@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>板栗大冒险</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>板栗大冒险</h1>
+        <canvas id="game-canvas" width="480" height="480"></canvas>
+        <div id="score">剩余板栗: 0</div>
+        <div id="timer">剩余时间: 30 秒</div>
+        <div id="message"></div>
+    </div>
+    <div id="card-popup" class="hidden">
+        <h2>恭喜通关！</h2>
+        <p>获得卡片：<span id="card-title"></span></p>
+        <p id="card-description"></p>
+        <button id="close-popup">关闭</button>
+    </div>
+    <div id="intro-popup" class="popup">
+        <h2>欢迎来到板栗大冒险！</h2>
+        <p>玩法说明：</p>
+        <ul>
+            <li>使用方向键控制小松鼠（🐿️）移动。</li>
+            <li>收集地图上所有的板栗（🌰）并避开狐狸（🦊）和石头（🪨）。</li>
+            <li>每关限时 30 秒，收集全部板栗即可通关。</li>
+            <li>通关后可以获得一张关于板栗历史文化的卡片。</li>
+        </ul>
+        <button id="start-game">开始游戏</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
